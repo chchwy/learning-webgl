@@ -1,5 +1,6 @@
 // WebGL 01
-// 好奇不知道要做什麼
+// 用鍵盤切換 clear color 的顏色
+// 數字鍵1,2,3
 
 var gl = null;
 var cnavs = null;
@@ -51,18 +52,21 @@ function checkKey( ev )
   //console.log( ev.keyCode );
   switch ( ev.keyCode )
   {
-    case 49:{
+    case 49: //1
+    {
       gl.clearColor( 0.3, 0.7, 0.2, 1.0 );
       clear(gl);
       break;
     }
-    case 50:{
+    case 50: //2
+    {
       gl.clearColor( 0.7, 0.3, 0.2, 1.0 );
       clear( gl );
       break;
     }
 
-    case 51:{
+    case 51: //3
+    {
       var color = gl.getParameter( gl.COLOR_CLEAR_VALUE );
       alert('clearColor = ('
             + Math.round(color[0] * 10) / 10 + ","
