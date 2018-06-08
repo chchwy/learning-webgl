@@ -1,2 +1,2 @@
-# webgl-go
+# Learning WebGL
 
