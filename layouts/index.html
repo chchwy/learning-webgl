@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+    <base href="{{ .Site.BaseURL }}">
+    <title>{{ .Site.Title }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+	<style>
+	body{background-color:#333; color:#ccc;font-family:Iosevka, Menlo, Monaco, Consolas, monospace;}
+	a {color: #88a;}
+	</style>
+</head>
+<body>
+
+<h1>{{ .Site.Title }}</h1>
+<section id="main">
+	<div style="padding-left:2em;">
+		Author: <a href="https://github.com/chchwy">Matt</a>
+	</div>
+	<ul class="post-list">
+		{{ range $name, $page := where .Data.Pages "Section" "" }}
+			<li>
+			<time datetime="{{ $page.Date.Format "2006-01-02" }}">{{ $page.Date.Format "2006-01-02" }}</time>
+			<a href="{{ .Permalink }}">{{ $page.Title }}</a>
+		</li>
+		{{ end }}
+		</ul>
+</section>
+
+</body>
+</html>

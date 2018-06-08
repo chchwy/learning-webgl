@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+    <base href="{{ .Site.BaseURL }}">
+    <title>{{ .Site.Title }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+	<style>
+	body {background-color:#333; color:#ccc;font-family:Iosevka, Menlo, Monaco, Consolas, monospace;}
+	a {color: #88a;}
+	#my-canvas { border: 2px solid gray; }
+	</style>
+</head>
+<body>
+
+<h1>{{ .Page.Title }}</h1>1
+<section id="main">
+{{ .Content }}
+</section>
+
+</body>
+</html>
