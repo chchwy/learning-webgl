@@ -16,7 +16,7 @@ function getGLContext(canvas_id) {
 	var ctx = null;
 	for (var i = 0; i < names.length; ++i) {
 		try {
-			ctx = canvas.getContext(names[ i ]);
+			ctx = canvas.getContext(names[i]);
 		} catch(e) {}
 
 		if (ctx) {
@@ -40,13 +40,13 @@ function checkKey(ev) {
 	//console.log( ev.keyCode );
 	switch (ev.keyCode) {
 	case 49: { //1
-		gl.clearColor( 0.3, 0.7, 0.2, 1.0 );
+		gl.clearColor(0.3, 0.7, 0.2, 1.0);
 		clear(gl);
 		break;
 	}
 	case 50: { //2
-		gl.clearColor( 0.7, 0.3, 0.2, 1.0 );
-		clear( gl );
+		gl.clearColor(0.7, 0.3, 0.2, 1.0);
+		clear(gl);
 		break;
 	}
 	case 51: { //3
