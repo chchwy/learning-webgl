@@ -1,6 +1,7 @@
+'use strict';
 
 var gl = null;
-var cnavs = null;
+var canvas = null;
 var c_width = 0;
 var c_height = 0;
 

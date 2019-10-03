@@ -1,5 +1,5 @@
 ---
-title: "Hello WebGL!"
+title: "00 Hello WebGL!"
 date: 2018-06-08
 ---
 
@@ -11,7 +11,7 @@ date: 2018-06-08
   </div>
 
   <div class="info" style="padding-left:15px;">
-    Hello WebGL!
+    Press 1, 2 or 3 to change clear colour!
   </div>
 </div>
 
